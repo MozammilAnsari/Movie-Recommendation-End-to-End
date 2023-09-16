@@ -27,8 +27,8 @@ def recommend(movie, num_of_movies):
 
 movies_list = movies_df['title'].values
 def main():
-    st.title("Recommendation System")
-    st.text("This recommendation engine is made by Mozammil!")
+    st.title("Movies Recommendation System")
+    st.text("This recommendation system recommend you top 1 to 30 movies")
 
     num_of_movies = st.select_slider('Number of Movies: ', range(1,31))
     selected_movie_names = st.selectbox('Movies Option: ',movies_list)
